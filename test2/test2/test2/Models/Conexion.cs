@@ -10,7 +10,7 @@ namespace test2.Models
     public class Conexion
     {
         //SqlConnection con = new SqlConnection("Data Source=DESKTOP-DGU3E63;Initial Catalog=infoTecDB;Persist Security Info=True;User ID=sa;Password=as");//conexcion local
-        SqlConnection con = new SqlConnection("Data Source=35.162.182.157;Initial Catalog=infoTec;Persist Security Info=True;User ID=InfoTec;Password=Cmoviles2017");//conexion remota
+        SqlConnection con = new SqlConnection("Data Source=35.162.182.157;Initial Catalog=infoTec;Persist Security Info=True;User ID=InfoTec;Password=Comumoviles2017");//conexion remota
         SqlCommand comand;
         SqlDataReader reader;
         string consult;

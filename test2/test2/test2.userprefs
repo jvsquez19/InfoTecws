@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{EB63A047-49B6-4CAB-BD12-7E8E0A4E4C7C}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="test2/Models/Conexion.cs">
+    <Files>
+      <File FileName="test2/Models/Conexion.cs" Line="13" Column="152" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
