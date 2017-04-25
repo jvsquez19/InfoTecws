@@ -1,0 +1,95 @@
+﻿<div id="send" class="mensaje">
+    <div id="topmenu">
+        <ul>
+            <li id="UserName"></li>
+            <!--<li id="M_admin" onclick="changeModul(2)">Enviados</li>
+            <li id="C_contraseña" onclick="changeModul(3)">Contraseña</li>-->
+            <li id="salir" onclick="changeModul(4)">Salir</li>
+        </ul>
+    </div>     
+    <div id="Mensaje_Enviar">
+        <br />
+        <input type="text" id="titulo" maxlength="100" name="u" placeholder="Titulo" required="required" />
+        <textarea rows="4" maxlength="600" id="description" name="u" placeholder="Descripcion" required="required"></textarea>
+        <input type="text" id="datepicker" placeholder="Fecha" required="required" />
+        <input id="file-input" name="file-input" type="file" onchange="previewFile(this)" />
+        <label for="file-input">
+            <div class="imageninput">
+                Click o arrastrar imagen
+            </div>
+            <input id="desplegar" type="button" onclick="mostrar_ocultar()" class="btn btn-primary btn-block btn-large" value="desplegar" />
+        </label>
+
+        <img id="imgPhoto" src="" class="perfilimg">
+
+
+
+        <div class="col-sm-6 col-lg-4">
+
+            <p style="color:white">
+                <div class="imageninput">
+                    <div class="cosa1">
+                        Borrable:
+                    </div>
+                    <div class="cosa2">
+                        <input id="switch-offColor" type="checkbox" data-off-color="warning">
+                    </div>
+                </div>
+                <input id="desplegarCarrera" type="button" onclick="mostrar_ocultarCarrera()" class="btn btn-primary btn-block btn-large" value="Departamentos" />
+            </p>
+        </div>
+        <div id="carreraDiv">
+            <p style="color:white">
+                <input id="ALL" type="button" onclick="marcarTODOS()" class="btn btn-primary btn-block btn-large" value="Marcar todos" />
+
+                <div class="bg"> <!-- deben ser dinamico -->
+                    <div class="cosa1">
+                        Computacion:
+                    </div>
+                    <div class="cosa2">
+                        <!-- el valor debe ser igual al de la base de datos -->
+                        <input id="Computacion" value="Ingenieria en Computacion" class="rigth" type="checkbox" data-off-color="warning">
+                    </div>
+                </div>
+                <div class="bg">
+                    <div class="cosa1">
+                        Direccion de sede:
+                    </div>
+                    <div class="cosa2">
+                        <input id="Direccion_sede" value="Direccion de sede" class="rigth" type="checkbox" data-off-color="warning">
+                    </div>
+                </div>
+                <!--<div class="bg">
+                    <div class="cosa1">
+                        Agronomia:
+                    </div>
+                    <div class="cosa2">
+                        <input id="Agronomia" value="AG" class="rigth" type="checkbox" data-off-color="warning">
+                    </div>
+
+                </div>
+                <div class="bg">
+                    <div class="cosa1">
+                        Administracion:
+                    </div>
+                    <div class="cosa2">
+                        <input id="Administracion" value="AE" class="rigth" type="checkbox" data-off-color="warning">
+                    </div>
+
+                </div>
+                <div class="bg">
+                    <div class="cosa1">
+                        Electronica:
+                    </div>
+                    <div class="cosa2">
+                        <input id="Electronica" value="IE" class="rigth" type="checkbox" data-off-color="warning">
+                    </div>
+
+                </div>-->
+            </p>
+        </div>
+        <input type="button" onclick="enviar()" class="btn btn-primary btn-block btn-large" value="Enviar" />
+        <br />
+    </div>
+</div>
+
