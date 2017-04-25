@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8"/>
+    <link href="~/eventos.png" rel="shortcut icon" type="image/x-icon" />
+
+    <title>InfoTEC</title>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="~/switch/bootstrap-switch.css" rel="stylesheet">
+    <script src="~/switch/bootstrap-switch.js"></script>
+    <script src="~/switch/main.js"></script>
+    <script src="~/switch/highlight.js"></script>
+
+
+    <script language="JavaScript" type="text/javascript" src="~/js/index.js"></script>
+    <script language="JavaScript" type="text/javascript" src="~/js/js.js"></script>
+    <script language="JavaScript" type="text/javascript" src="~/js/prefixfree.min.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/normalize.css">
+    <link rel="stylesheet" href="~/css/login.css">
+    <link rel="stylesheet" href="~/css/custom.css">
+
+    
+    <link rel="stylesheet" href="~/datepicker/smooth.css">    
+    <script language="JavaScript" type="text/javascript" src="~/datepicker/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/datepicker/style.css"> 
+
+    <script type="text/javascript">
+
+			$(document).ready(function()
+			{
+			    $("#datepicker").datepicker();
+			});
+
+    </script>
+
+</head>
+<body onresize="re()" id="style-6">
+
+    @RenderSection("featured", required: false)
+    
+    <div id="MainDiv">
+        <script>
+            loginDinamico("");
+        </script>
+    </div>    
+
+        @RenderSection("scripts", required: false)
+</body>
+</html>
